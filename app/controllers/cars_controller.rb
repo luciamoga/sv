@@ -3,6 +3,7 @@ class CarsController < ApplicationController
   # GET /cars.json
   def index
     @cars = Car.all
+    @most_expensive_car=Car.most_expensive.model
 
     respond_to do |format|
       format.html # index.html.erb

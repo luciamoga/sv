@@ -1,10 +1,12 @@
 <h1>Listing cars</h1>
-
+<p>Most expensive car: <%= @most_expensive_car%></p>
 <table>
   <tr>
     <th>Color</th>
     <th>Hp</th>
     <th>Model</th>
+    <th>Price</th>
+    <th>stock</th>
     <th></th>
     <th></th>
     <th></th>
@@ -15,6 +17,9 @@
     <td><%= car.color %></td>
     <td><%= car.hp %></td>
     <td><%= car.model %></td>
+    <td><%= car.price %></td>
+    <td><%= car.stock %></td>
+    <td><%= car.total_value %></td>
     <td><%= link_to 'Show', car %></td>
     <td><%= link_to 'Edit', edit_car_path(car) %></td>
     <td><%= link_to 'Destroy', car, method: :delete, data: { confirm: 'Are you sure?' } %></td>

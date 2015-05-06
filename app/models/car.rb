@@ -1,5 +1,5 @@
 class Car < ActiveRecord::Base
-  attr_accessible :color, :hp, :model, :price, :stock
+  #attr_accessible :color, :hp, :model, :price, :stock
   def total_value
 	price * stock
   end

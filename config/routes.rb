@@ -1,4 +1,10 @@
 Sv::Application.routes.draw do
+  devise_for :users
+  post "svcontroller/email"
+
+  get "svcontroller/index"
+
+
   resources :cars
 
 

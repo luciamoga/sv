@@ -25,7 +25,10 @@
     <td><%= link_to 'Destroy', car, method: :delete, data: { confirm: 'Are you sure?' } %></td>
   </tr>
 <% end %>
+
 </table>
+
+<%= link_to 'Send email', svcontroller_email_path, method: :post%>
 
 <br />
 
